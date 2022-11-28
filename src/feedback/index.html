@@ -10,11 +10,12 @@
 			href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inconsolata:wght@500&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="icon" href="assets/logo.png" type="image/png" />
+		<link rel="icon" href="../assets/logo.png" type="image/png" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
 
-		<title>Bikenergy</title>
+		<title>Bikenergy - Feedback</title>
 
+		<script src="index.js"></script>
 		<script src="https://cdn.tailwindcss.com"></script>
 
 		<style>
@@ -34,7 +35,7 @@
 			<div class="navbar-brand">
 				<a href="https://bikenergy.vyrek.dev">
 					<img
-						src="assets/logo.png"
+						src="../assets/logo.png"
 						alt="Bikenergy: Un proyecto de energia"
 						width="70"
 						height="70"
@@ -53,11 +54,37 @@
 		</nav>
 
 		<div class="flex justify-center content-center items-center h-screen w-screen grid bg-[#b9edd0]">
-			<a class="text-7xl" style="font-family: 'Fredoka One', cursive">Bikenergy</a>
+			<div class="field">
+				<label class="label">Nombre</label>
+				<div class="control">
+					<input
+						class="input bg-[#83cca3] text-[#000000]"
+						type="text"
+						placeholder="Escribe aqui..."
+						id="name"
+					/>
+				</div>
+			</div>
 
-			<a class="text-xl mt-5 text-[#5c5c5c]" style="font-family: 'Inconsolata', monospace"
-				>Energía asequible y no contaminante.
-			</a>
+			<div class="field">
+				<label class="label">Feedback</label>
+				<div class="control">
+					<textarea
+						class="textarea bg-[#83cca3] text-[#000000]"
+						placeholder="Escribe aqui tu feedback..."
+						id="feedback"
+					></textarea>
+				</div>
+			</div>
+
+			<div class="field is-grouped">
+				<div class="control">
+					<button class="button bg-[#22c96c]" id="form-button">Enviar</button>
+				</div>
+				<div class="control">
+					<button class="button bg-[#f09090]" id="form-button">Cancelar</button>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
