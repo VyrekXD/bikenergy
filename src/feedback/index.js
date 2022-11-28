@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
 
 	button.addEventListener('click', async () => {
 		await fetch(
-			`https://back.bikenergy.vyrek.dev/submit`,
+			`https://back-bikenergy.vyrek.dev/submit`,
 
 			{
 				body: JSON.stringify({ name: name.value, feedback: feedback.value }),

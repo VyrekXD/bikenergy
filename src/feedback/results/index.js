@@ -1,5 +1,5 @@
 window.addEventListener('load', async () => {
-	const data = await fetch('https://back.bikenergy.vyrek.dev/data').then((res) => res.json())
+	const data = await fetch('https://back-bikenergy.vyrek.dev/data').then((res) => res.json())
 	const div = document.getElementById('results-div')
 
 	data.forEach(({ name, feedback }) => {
